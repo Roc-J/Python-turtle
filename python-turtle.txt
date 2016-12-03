@@ -1,0 +1,29 @@
+python turtle绘图实例教程
+
+python turtle是一种简单的绘图工具
+1. 使用turtle绘图首先我们需要导入turtle,如下所示：
+  from turtle import *
+
+2. turtle绘图属性
+  （1）位置
+  （2）方向
+  （3）画笔（画笔的属性，颜色，画线的宽度）
+
+3. turtle绘图有许多的命令，这些命令可以划分为两种，一种为运动命令，一种为画笔控制命令
+  （1）运行命令
+  forward(degress) # 向前移动距离degress代表距离
+  backward(degress) #向后移动距离degress代表距离
+  right(degress) #向右移动多少度
+  left(degress) #向左移动多少度
+  goto(x,y) #将画笔移动到坐标x,y的位置
+  stamp() #复制当前图形
+  speed() #画笔绘制的速度范围[0,10]整数
+
+  （2）画笔控制命令
+   down() #移动时绘制图形，缺省时也为绘制
+   up() #移动时不绘制图形
+   pensize(width) #绘制图形时的宽度
+   color(colorstring) #绘制图形时的颜色
+   fillcolor(colorstring) #绘制图形的填充颜色
+  fill(Ture)
+  fill(false)
