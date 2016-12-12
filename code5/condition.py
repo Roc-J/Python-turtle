@@ -29,10 +29,9 @@ tess.color("blue")
 tess.pensize(3)
 
 for a in xs:
-    area = a*40
-    if area>=20000:
+    if a>=200:
         tess.fillcolor("red")
-    elif area>=10000:
+    elif a>=100:
         tess.fillcolor("yellow")
     else:
         tess.fillcolor("green")

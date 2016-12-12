@@ -7,6 +7,6 @@ alex = turtle.Turtle()
 
 for i in range(0,300,3):
     alex.forward(i)
-    alex.right(89)
+    alex.right(90)
 
 wn.exitonclick()

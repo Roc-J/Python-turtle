@@ -13,8 +13,6 @@ def drawBar(t, height):
     t.left(90)
     t.end_fill()                 # stop filling this shape
 
-
-
 xs = [48, 117, 200, 240, 160, 260, 220,-80]  # here is the data
 maxheight = max(xs)
 numbars = len(xs)
