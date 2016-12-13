@@ -139,3 +139,49 @@ while循环
 效果图如图所示:  
   
 ![](http://i.imgur.com/oo1fUgR.png)
+
+### 跳出循环 ###
+跳出循环使用break和continue
+
+	for i in range(1,6):
+	    print 'i=',i,
+	    print 'Hello,how',
+	    if i==3:
+	        continue
+	    print 'are you today?'
+
+break是跳出循环体  
+continue是跳过循环体下面的语句，执行下一次循环  
+
+
+### 注释 ###
+写注释的目的有以下几点:  
+1. 为什么要写这个程序  
+2. 谁写的  
+3. 为谁写的  
+4. 是怎么组织的  
+5. 写的时间  
+
+### 注释类型 ###
+* 单行注释  
+
+		#This is a comment in a Python program
+		print 'this is not a comment'
+
+* 在一行结尾处注释  
+
+		area=length*width #Calculate the area of the rectangle
+
+* 多行注释  
+
+		#**********
+		# this is a program to illustrate how comments are used in python
+		# the row of stars is used to visually separate the comments
+		# from the rest of the code 
+		#**********
+
+* 三重引用  
+
+		"""
+		Here is a comment taht is on multiple lines,using a triple-quoted string
+		"""
