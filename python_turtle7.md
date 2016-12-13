@@ -102,3 +102,40 @@ while循环
 	print answer
 
 因为上面的代码中条件状态永远不能为False，所以是一个死循环。  
+
+通过上面的例子，下面通过一个简单的例子来复习一下上面的内容。  
+使用turtle在窗口中绘图漫步：  
+1. turtle先从屏幕的中心开始  
+2. 产生一个随机数，在0和1之间取值，如果是0则左转90度，如果是1则右转90度  
+3. 向前走30个单元  
+4. 如果turtle已经移动到屏幕之外，则停止，否则返回步骤2重复。  
+
+	import random
+	import turtle
+	"""create the window and turtle"""
+	wn = turtle.Screen()
+	alex = turtle.Turtle()
+	# get the width and height of the window
+	x1 = alex.window_width()/2
+	y1 = alex.window_height()/2
+	# get the current position(x,y)
+	x = alex.xcor()
+	y = alex.ycor()
+	# while loop ,create a randint(0,1) to determine turn which direction
+	while (x<=x1 and x>= -x1) and (y<=y1 and y>=-y1):
+	    flag = random.randint(0, 1)
+	    flag = int(flag)
+	    if flag==0:
+	        alex.left(90)
+	    else:
+	        alex.right(90)
+	    alex.forward(50)
+	    x = alex.xcor()
+	    y = alex.ycor()
+	
+	wn.exitonclick()
+
+
+效果图如图所示:  
+  
+![](http://i.imgur.com/oo1fUgR.png)
