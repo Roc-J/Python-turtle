@@ -53,3 +53,4 @@ int,float,bool,str
 * upper() 字符串大写  
 * lower() 字符串小写  
 * capitalize() 首字母大写  
+* 
