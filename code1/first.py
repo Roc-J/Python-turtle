@@ -14,3 +14,5 @@ alex.left(90)
 alex.forward(75)
 
 time.sleep(3)
+
+wn.exitonclick()
