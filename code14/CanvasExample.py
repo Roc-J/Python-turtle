@@ -1,6 +1,7 @@
 from Tkinter import *
 
 class CanvasDemo:
+    """"""
     def __init__(self):
         wn = Tk()
         wn.title("Canvas Demo")
@@ -50,4 +51,4 @@ class CanvasDemo:
     def clearCanvas(self):
         self.canvas.delete("rect","oval","arc","polygon","line","string")
 
-CanvasDemo()
+obj1 = CanvasDemo()

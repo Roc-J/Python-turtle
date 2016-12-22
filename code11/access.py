@@ -15,3 +15,6 @@ c = Circle(5)
 print c.getArea()
 print c.radius
 print c.getPerimeter()
+
+c.setRadius(10)
+print c.getPerimeter()
