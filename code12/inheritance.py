@@ -19,8 +19,11 @@ class Child(Parent):
     def childMethod(self):
         print "running child method"
 
+    def parentMethod(self):
+        print "running parent menthod in child"
+
 c = Child()
 c.childMethod()
 c.parentMethod()
-c.setAttr(500)
+c.setAttr(660)
 c.getAttr()
