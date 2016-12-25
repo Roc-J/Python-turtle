@@ -45,5 +45,19 @@ Tkinter使用几何管理器在容器中管理组件
 
 grid()用法最简单的就是在参数里指定是几行几列  
 
+### Pack包管理器 ###
+pack()中最常用的选项包括:  
+side:LEFT,TOP,RIGHT和BOTTOM(这些决定了窗口部件的对齐方式)  
+fill:X,Y,BOTH和NONE(这些决定了窗口小部件是否可以增大)  
+anchor:NW, N, NE, E, SE, S, SW, W和CENTER，对应于基本方向  
+Internal padding内部填充（ipadx和ipady）和外部填充（padx和pady），所有默认值为零  
 
+
+### 你应该在哪里使用pack()几何管理器 ###
+使用包管理器比使用grid网格管理器要稍微复杂一点，但它在某些情况下有一个很好的选择，例如：  
+* 有一个小部件填充完整的容器框架  
+* 将多个小部件放在 彼此的顶部或者并排显示（这个最常用）  
+* 位置  
+
+### Place Manager布局 ###
 
