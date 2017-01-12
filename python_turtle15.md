@@ -61,3 +61,28 @@ Internal padding内部填充（ipadx和ipady）和外部填充（padx和pady）�
 
 ### Place Manager布局 ###
 
+place布局就是能够指定x和y的坐标位置来进行定位放置。下面举一个例子来进行说明：
+
+	from Tkinter import *
+	
+	class PlaceManagerDemo:
+	    def __init__(self):
+	        window = Tk()
+	        window.title("Place Manager Demo")
+	
+	        Label(window,text="Blue",bg="blue").place(x=20,y=20)
+	
+	        Label(window, text="Red", bg="red").place(x=50, y=50)
+	
+	        Label(window, text="Green", bg="green").place(x=80, y=80)
+	
+	        window.mainloop()
+	
+	PlaceManagerDemo()
+
+程序说明:  
+（1）引入Tkinter包  
+（2）声明一个类，在类中初始化一些信息，包括生成一个窗口window，在窗口中设置标题  
+（3）生成是哪个标签Label，分别指定它们的属性并放置在窗口中，其中是采用place布局来进行防治，place(x=,y=)参数通过制定x,y的参数来进行定位。  
+
+
