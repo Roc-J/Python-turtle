@@ -48,5 +48,11 @@ mymenu.add_command(label="Mylabel",accelerator="KeyBoardShortcut",compound=LEFT,
 
 点击File会显示下面的菜单项
 
+程序说明：  
+1. 使用Menu()来创建一个菜单栏menubar  
+2. 使用Menu(menubar,tearoff=0)来创建一个文件菜单filemenu     
+3. 使用menubar.add_cascade(label="File",menu=filemenu)将刚刚创建的filemenu加到菜单栏上   
+4. 使用filemenu.add_command(label="name")来增加菜单项  
+
 
 
