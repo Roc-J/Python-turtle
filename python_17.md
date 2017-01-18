@@ -55,4 +55,12 @@ mymenu.add_command(label="Mylabel",accelerator="KeyBoardShortcut",compound=LEFT,
 4. 使用filemenu.add_command(label="name")来增加菜单项  
 
 
+### 弹出菜单 ###
+弹出菜单也可以称为是上下文菜单，就像一个常规菜单，但是不是像传统的那样有菜单栏，它是一个浮在屏幕上的任何地方。  
+
+创建一个弹出式菜单类似于创建一个常规的菜单  
+1. 创建一个Menu实例  
+2. 向菜单添加菜单项  
+3. 将一个窗口部件绑定到一个事件上来弹出菜单  
+
 
